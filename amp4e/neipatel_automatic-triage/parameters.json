@@ -1,0 +1,9 @@
+{
+	"debug" : true,
+	"id": "",
+	"api_key" : "",
+	"endpoint" : "api.amp.cisco.com",
+	"group_name" : "",
+	"dest_group" : "",
+	"event_name" : ""
+}
