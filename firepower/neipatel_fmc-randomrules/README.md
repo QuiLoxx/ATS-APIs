@@ -40,3 +40,9 @@ To execute the script from the OS shell run either:
 `python setup.py`
 or
 `./setup.py`
+
+This tool also has a cleanup functionality where all created rules will be deleted. To run cleanup at the prompt:
+
+`Would you like to cleanup? [1/0]`
+
+enter `1` to remove rules or `0` to keep them.
