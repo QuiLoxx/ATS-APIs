@@ -10,3 +10,6 @@ Welcome everyone to the API reposoitory for all things Cisco Security a few grou
 3.) if any of these rules are violated I will remove the content and request you re-upload with the right procedure
 
 Uploading Guide:
++ Create a new directory with the following syntax cecid_descriptivename
++ upload your files into said directory
++ create an new "README.md" file in your direcotry with documentation on how to use your tool
