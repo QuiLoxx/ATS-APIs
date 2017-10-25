@@ -31,7 +31,7 @@ def get(url):
         return "Error: {}".format(e)
 
 
-api_key = "e85vn49lh1icrj4t2ibi82raja"
+api_key = ""
 
 #-----------LIST OF AVAILIBLE FEEDS TO PULL FROM-----------#
 feedNames = ['banking-dns','dll-hijacking-dns','doc-net-com-dns','downloaded-pe-dns',
