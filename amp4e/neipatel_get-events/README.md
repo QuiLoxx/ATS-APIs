@@ -1,7 +1,5 @@
-Files
-events.py
+### Files
 
-Dependencies
-import requests
-import json
+
+### Dependencies
 
