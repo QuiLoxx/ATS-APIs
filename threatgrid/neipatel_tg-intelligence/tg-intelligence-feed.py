@@ -70,17 +70,14 @@ for url in query_urls:
 		domains.append(response[a]["domain"])
 		shas.append(response[a]["sample_sha256"])
 
-pruned_domains = []
-for domain in domains:
-	if domain not in pruned_domains:
-		pruned_domains.append(domain)
+domains = set(domains)
 
 #-----------WRITE OUTPUTS TO FILES FOR USE IN LATER SECTIONS-----------#
  
 domain_file = open(feedNames[feed_selection]+'_domains','w')
 sha_file = open(feedNames[feed_selection]+'_shas','w')
 
-for domain in pruned_domains:
+for domain in domains:
 	domain_file.write("%s\n" % domain)
 
 for sha in shas:
