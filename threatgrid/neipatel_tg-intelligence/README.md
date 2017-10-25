@@ -18,7 +18,7 @@ import datetime
 Enter the api credentials for your Threat Grid account (found on line 34)  
 ```
 #---------ENTER YOUR API KEY --------------#
-api_key = "e85vn49lh1icrj4t2ibi82raja"
+api_key = "<your api key here>"
 ```
 
 To execute the script from the OS shell run either:
