@@ -1,7 +1,7 @@
 # Files
-> events.py
+events.py
 
 # Dependencies
-> import requests
+import requests
 
-> import json
+import json
