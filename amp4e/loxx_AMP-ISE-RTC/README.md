@@ -59,6 +59,7 @@ Example configuration file:
 ```
 
 Sample environment setup:
+```
 + ISE implementation with external restful services (ERS) enabled.
 + AMP for Endpoints public cloud
 + Unix/Linux/BSD/macOS system with Python to run these scripts
@@ -71,9 +72,10 @@ Within AMP, there are 3 sample groups that we are concerned with:
 Within ISE, there are two ANC labels (ISE calls these policies) that we are concerned with:
   1. ANC-Investigate.  The label to assign an endpoint when wishing to investigate it further.
   2. ANC-KickFromNetwork.  The label to assign an endpoint when wishing to blacklist / nuke it from orbit.
+```
 
 To execute the script from the OS shell run:
-
+```
 + 'python get-anc-labels.py' # this will reach out to ISE via the ERS API and retrieve all the configured ANC labels (aka:ANC policies) and write that data to the anc_lables.json file.
 
 + 'python get-anc-endpoints' # this will reach out to ISE via the ERS API and retrieve all the endpoints that have an ANC classification and write that data to the anc_endpoints.json file.
@@ -81,3 +83,5 @@ To execute the script from the OS shell run:
 `python automatic_triage.py` # this will reach out to the AMP public cloud using the REST API and look for any endpoints within the configured group that have an event name matching one of two strings:
   1.  "Threat Quarantined".  Endpoints within the defined group with events matching this name will be moved into the ATW-Isolate group and then the script will also reach out to ISE via the ERS API and assign the endpoint the ANC-KickFromNetwork label, triggering a change of authorization (CoA-Reath).
   2.  "Threat Detected".  Endpoints within the defined group with events matching this name will be moved into the ATW-Triage group and then the script will also reach out to ISE via the ERS API and assign the endpoint the ANC-Investigate label, triggering a change of authorization (CoA-Reath).
+```
+EOF
