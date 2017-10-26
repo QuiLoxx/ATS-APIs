@@ -1,0 +1,25 @@
+{
+  "SearchResult": {
+    "total": 2,
+    "resources": [
+      {
+        "link": {
+          "href": "https://ise.woland.com:9060/ers/config/ancpolicy/ANC-Investigate",
+          "type": "application/xml",
+          "rel": "self"
+        },
+        "id": "ANC-Investigate",
+        "name": "ANC-Investigate"
+      },
+      {
+        "link": {
+          "href": "https://ise.woland.com:9060/ers/config/ancpolicy/ANC-KickFromNetwork",
+          "type": "application/xml",
+          "rel": "self"
+        },
+        "id": "ANC-KickFromNetwork",
+        "name": "ANC-KickFromNetwork"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"debug" : true,
+	"id" : "5084cd8b120e7c807e33",
+	"api_key" : "4b91efc9-1ab5-4b51-ac3c-254eb0b2bcb8",
+	"endpoint" : "api.amp.cisco.com",
+	"group_name" : "ATW-Group",
+	"dest_group" : "ATW-Triage",
+	"event_name" : "Threat Quarantined",
+	"triage_event_name" : "Threat Detected",
+	"host" : "ise.woland.com",
+	"port" : "9060",
+	"username" : "neil",
+	"password" : "AMPr0cks"
+}
