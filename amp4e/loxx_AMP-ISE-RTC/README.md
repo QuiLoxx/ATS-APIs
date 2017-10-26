@@ -80,7 +80,7 @@ To execute the script from the OS shell run:
 
 + 'python get-anc-endpoints' # this will reach out to ISE via the ERS API and retrieve all the endpoints that have an ANC classification and write that data to the anc_endpoints.json file.
 
-`python automatic_triage.py` # this will reach out to the AMP public cloud using the REST API and look for any endpoints within the configured group that have an event name matching one of two strings:
++ `python rtc_amp_ise.py` # this will reach out to the AMP public cloud using the REST API and look for any endpoints within the configured group that have an event name matching one of two strings:
   1.  "Threat Quarantined".  Endpoints within the defined group with events matching this name will be moved into the ATW-Isolate group and then the script will also reach out to ISE via the ERS API and assign the endpoint the ANC-KickFromNetwork label, triggering a change of authorization (CoA-Reath).
   2.  "Threat Detected".  Endpoints within the defined group with events matching this name will be moved into the ATW-Triage group and then the script will also reach out to ISE via the ERS API and assign the endpoint the ANC-Investigate label, triggering a change of authorization (CoA-Reath).
 ```
