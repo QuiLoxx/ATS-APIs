@@ -13,7 +13,7 @@ import json
 ```
 
 **Usage**
-Enter the api credentials for your amp for enpoints account and the event ID you are interested in (found between lines 20 and 23)  
+Enter the api credentials for your amp for endpoints account and the event ID you are interested in (found between lines 20 and 23)  
 ```
 client_id = ""
 api_key = ""
