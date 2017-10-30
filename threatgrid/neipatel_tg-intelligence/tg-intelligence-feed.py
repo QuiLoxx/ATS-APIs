@@ -30,7 +30,7 @@ def get(url):
         # A serious problem happened, like an SSLError or InvalidURL
         return "Error: {}".format(e)
 
-
+#enter api key here
 api_key = ""
 
 #-----------LIST OF AVAILIBLE FEEDS TO PULL FROM-----------#
@@ -73,7 +73,7 @@ for url in query_urls:
 domains = set(domains)
 
 #-----------WRITE OUTPUTS TO FILES FOR USE IN LATER SECTIONS-----------#
- 
+
 domain_file = open(feedNames[feed_selection]+'_domains','w')
 sha_file = open(feedNames[feed_selection]+'_shas','w')
 
