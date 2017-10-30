@@ -1,0 +1,13 @@
+**debug - loading in parameters now....
+**debug - parameters loaded in.... OK!
+**debug - begin parameter check....
+**debug - endpoint is api.amp.cisco.com.... OK!
+**debug - event_name is Threat Detected.... OK!
+**debug - group_name is Audit.... OK!
+**debug - client_id is 2cee1c2200a2e9d63f53.... OK!
+**debug - api_key is bef01fff-7b9b-4f4b-887b-1db821f07ceb.... OK!
+**debug - parameter check complete.... OK!
+**debug - group found with ID cf921ba4-8227-4b32-965d-437f883a0aaf.... OK!
+**debug - event type found with ID 1090519054.... OK!
+**debug - event stream created.... OK!
+**debug - begining work to start listening for events.... OK!
