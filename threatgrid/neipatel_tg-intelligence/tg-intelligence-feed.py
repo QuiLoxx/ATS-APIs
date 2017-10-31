@@ -69,7 +69,7 @@ for url in query_urls:
 	for a in range (len(response)):
 		domains.append(response[a]["domain"])
 		shas.append(response[a]["sample_sha256"])
-
+#better way than before
 domains = set(domains)
 
 #-----------WRITE OUTPUTS TO FILES FOR USE IN LATER SECTIONS-----------#
