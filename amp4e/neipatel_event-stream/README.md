@@ -3,11 +3,11 @@
 This tool starts an AMQP event stream using the AMP4e API and prints event data live to a screen
 
 **Files**
-
-`parameters.json`
-`amp_api.py`
-`amp_event_stream.py`
-
+```
+parameters.json
+amp_api.py
+amp_event_stream.py
+```
 **Dependencies**
 ```
 import requests
