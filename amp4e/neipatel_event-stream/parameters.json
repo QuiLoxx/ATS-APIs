@@ -1,7 +1,7 @@
 {
 	"debug" : true,
-	"client_id": "2cee1c2200a2e9d63f53",
-	"api_key" : "bef01fff-7b9b-4f4b-887b-1db821f07ceb",
+	"client_id": "",
+	"api_key" : "  ",
 	"endpoint" : "api.amp.cisco.com",
 	"group_name" : "Audit",
 	"event_name" : "Threat Detected"
