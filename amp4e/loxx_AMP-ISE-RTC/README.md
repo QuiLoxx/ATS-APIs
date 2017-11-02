@@ -9,7 +9,7 @@ NOTE: Logging for this script will generate a `debug.log` file in the execution 
 
 **Files**
 ```
-rtc-amp-ise.py
+rtc_amp_ise.py
 parameters.json
 rest_methods.py
 anc_endpoints.json
