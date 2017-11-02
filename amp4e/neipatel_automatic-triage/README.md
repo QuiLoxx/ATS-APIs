@@ -35,8 +35,8 @@ Example configuration file:
 
 ```
 "debug" : true,
-"id": "c57f21cde3d3c6421795",
-"api_key" : "2a0d74b2-ba1e-4104-a751-b9ef8807e3df",
+"id": "c57f21cdee54c6421795",
+"api_key" : "2a0d74b2-ba1e-4698-a751-b9ef8807e3df",
 "endpoint" : "api.amp.cisco.com",
 "group_name" : "Protect",
 "dest_group" : "Triage",

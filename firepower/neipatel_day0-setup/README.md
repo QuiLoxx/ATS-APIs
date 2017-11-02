@@ -30,11 +30,11 @@ domain = ""
 Example configuration:
 
 ```
-fmc_hostname = "tme-fs4k"
+fmc_hostname = "FMC4k.example.local"
 fmc_username = "api-script"
-fmc_password = "F!repowerl4b"
-device_name = "tme-ngfw"
-device_hostname = "tme-ngfw"
+fmc_password = "myPassword"
+device_name = "ngfw"
+device_hostname = "ngfw.example.local"
 regkey = "123456"
 domain = "Global/test/test-nested"
 ```

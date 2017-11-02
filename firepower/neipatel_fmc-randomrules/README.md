@@ -28,9 +28,9 @@ number_of_rules = #of rules to add
 Example configuration:
 
 ```
-fmc_hostname = "neipatel-fmc"
-fmc_username = "admin3"
-fmc_password = "F!repowerl4b"
+fmc_hostname = "FMC4k.example.local"
+fmc_username = "api-script"
+fmc_password = "myPassword"
 domain = "Global"
 number_of_rules = 200
 ```

@@ -2,11 +2,11 @@
 import connect
 # ----------BEGIN : USER CONFIG VARIABLE SECTION----------
 
-fmc_hostname = "neipatel-fmc"
-fmc_username = "apiuser"
-fmc_password = "F!repowerl4b"
-device_name = "neipatel-ftd"
-device_hostname = "neipatel-ftd"
+fmc_hostname = ""
+fmc_username = ""
+fmc_password = ""
+device_name = ""
+device_hostname = ""
 regkey = "123456"
 domain = "Global"
 
