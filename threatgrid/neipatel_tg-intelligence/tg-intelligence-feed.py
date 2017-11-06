@@ -61,6 +61,7 @@ query_urls = []
 for date in dates:
 	query_urls.append(feedURLs[feedNames[feed_selection]][date])
 
+#initialize empty arrays 
 domains = []
 shas = []
 
