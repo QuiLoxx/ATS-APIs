@@ -35,7 +35,7 @@ fmc_username = "api-script"
 fmc_password = "myPassword"
 device_name = "ngfw"
 device_hostname = "ngfw.example.local"
-regkey = "123456"
+regkey = "passkey"
 domain = "Global/test/test-nested"
 ```
 
