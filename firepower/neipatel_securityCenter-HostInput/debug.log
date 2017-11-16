@@ -1,0 +1,60 @@
+**DEBUG: PARAMETERS READ IN 
+Hostname: neipatel-securitycenter.cisco.com 
+Username: labuser
+Password: F!repowerl4b
+Network: 172.26.155.0/24
+**DEBUG: Processed Vulnerability ID 10264 - SNMP Agent Default Community Names
+**DEBUG: Processed Vulnerability ID 93650 - Dropbear SSH Server < 2016.72 Multiple Vulnerabilities
+**DEBUG: Processed Vulnerability ID 86947 - VMware ESXi 5.5 < Build 3029944 OpenSLP RCE (VMSA-2015-0007)
+**DEBUG: Processed Vulnerability ID 88906 - ESXi 5.5 < Build 3568722 / 6.0 < Build 3568940 glibc DNS Resolver RCE (VMSA-2016-0002) (remote check)
+**DEBUG: Processed Vulnerability ID 79638 - MS14-066: Vulnerability in Schannel Could Allow Remote Code Execution (2992611) (uncredentialed check)
+**DEBUG: Processed Vulnerability ID 97833 - MS17-010: Security Update for Microsoft Windows SMB Server (4013389) (ETERNALBLUE) (ETERNALCHAMPION) (ETERNALROMANCE) (ETERNALSYNERGY) (WannaCry) (EternalRocks) (Petya) (uncredentialed check)
+**DEBUG: Processed Vulnerability ID 41028 - SNMP Agent Default Community Name (public)
+**DEBUG: Processed Vulnerability ID 97946 - Cisco IOS XE ANI IPv6 Packets DoS (cisco-sa-20170320-aniipv6)
+**DEBUG: Processed Vulnerability ID 77200 - OpenSSL 'ChangeCipherSpec' MiTM Vulnerability
+**DEBUG: Processed Vulnerability ID 81085 - ESXi 5.5 < Build 2352327 Multiple Vulnerabilities (remote check) (POODLE)
+**DEBUG: Processed Vulnerability ID 99129 - ESXi 5.5 < Build 5230635 Multiple Vulnerabilities (VMSA-2017-0006) (remote check)
+**DEBUG: Processed Vulnerability ID 58435 - MS12-020: Vulnerabilities in Remote Desktop Could Allow Remote Code Execution (2671387) (uncredentialed check)
+**DEBUG: Processed Vulnerability ID 51192 - SSL Certificate Cannot Be Trusted
+**DEBUG: Processed Vulnerability ID 57582 - SSL Self-Signed Certificate
+**DEBUG: Processed Vulnerability ID 42263 - Unencrypted Telnet Server
+**DEBUG: Processed Vulnerability ID 35291 - SSL Certificate Signed Using Weak Hashing Algorithm
+**DEBUG: Processed Vulnerability ID 42873 - SSL Medium Strength Cipher Suites Supported
+**DEBUG: Processed Vulnerability ID 94437 - SSL 64-bit Block Size Cipher Suites Supported (SWEET32)
+**DEBUG: Processed Vulnerability ID 50686 - IP Forwarding Enabled
+**DEBUG: Processed Vulnerability ID 26928 - SSL Weak Cipher Suites Supported
+**DEBUG: Processed Vulnerability ID 10882 - SSH Protocol Version 1 Session Key Retrieval
+**DEBUG: Processed Vulnerability ID 76474 - SNMP 'GETBULK' Reflection DDoS
+**DEBUG: Processed Vulnerability ID 90317 - SSH Weak Algorithms Supported
+**DEBUG: Processed Vulnerability ID 20007 - SSL Version 2 and 3 Protocol Detection
+**DEBUG: Processed Vulnerability ID 78479 - SSLv3 Padding Oracle On Downgraded Legacy Encryption Vulnerability (POODLE)
+**DEBUG: Processed Vulnerability ID 15901 - SSL Certificate Expiry
+**DEBUG: Processed Vulnerability ID 97861 - Network Time Protocol (NTP) Mode 6 Scanner
+**DEBUG: Processed Vulnerability ID 93737 - Cisco IOS XE IKEv1 Packet Handling Remote Information Disclosure (cisco-sa-20160916-ikev1) (BENIGNCERTAIN)
+**DEBUG: Processed Vulnerability ID 97944 - Cisco IOS XE ANI Registrar DoS (cisco-sa-20170320-ani)
+**DEBUG: Processed Vulnerability ID 102995 - Cisco NX-OS IS-IS Packet Processing Denial of Service Vulnerability
+**DEBUG: Processed Vulnerability ID 71783 - Network Time Protocol Daemon (ntpd) monlist Command Enabled DoS
+**DEBUG: Processed Vulnerability ID 42880 - SSL / TLS Renegotiation Handshakes MiTM Plaintext Data Injection
+**DEBUG: Processed Vulnerability ID 45411 - SSL Certificate with Wrong Hostname
+**DEBUG: Processed Vulnerability ID 66848 - SSL Null Cipher Suites Supported
+**DEBUG: Processed Vulnerability ID 60108 - SSL Certificate Chain Contains Weak RSA Keys
+**DEBUG: Processed Vulnerability ID 51892 - OpenSSL SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG Session Resume Ciphersuite Downgrade Issue
+**DEBUG: Processed Vulnerability ID 51893 - OpenSSL SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG Ciphersuite Disabled Cipher Issue
+**DEBUG: Processed Vulnerability ID 74470 - ESXi 5.5 < Build 1881737 OpenSSL Library Multiple Vulnerabilities (remote check)
+**DEBUG: Processed Vulnerability ID 78108 - ESXi 5.5 < Build 1980513 glibc Library Multiple Vulnerabilities (remote check)
+**DEBUG: Processed Vulnerability ID 87678 - VMware ESXi Multiple OpenSSL Vulnerabilities (VMSA-2014-0006)
+**DEBUG: Processed Vulnerability ID 87679 - VMware ESXi Multiple DoS (VMSA-2014-0008)
+**DEBUG: Processed Vulnerability ID 87942 - ESXi 5.5 < Build 3248547 Shared Folders (HGFS) Guest Privilege Escalation (VMSA-2016-0001) (remote check)
+**DEBUG: Processed Vulnerability ID 92949 - ESXi 5.0 / 5.1 / 5.5 / 6.0 Multiple Vulnerabilities (VMSA-2016-0010) (remote check)
+**DEBUG: Processed Vulnerability ID 103375 - ESXi 5.5 < Build 6480267 RPC NULL Pointer Dereference Vulnerability (VMSA-2017-0015) (remote check)
+**DEBUG: Processed Vulnerability ID 18405 - Microsoft Windows Remote Desktop Protocol Server Man-in-the-Middle Weakness
+**DEBUG: Processed Vulnerability ID 57608 - SMB Signing Disabled
+**DEBUG: Processed Vulnerability ID 57690 - Terminal Services Encryption Level is Medium or Low
+**DEBUG: Processed Vulnerability ID 58453 - Terminal Services Doesn't Use Network Level Authentication (NLA) Only
+**DEBUG: Processed Vulnerability ID 70658 - SSH Server CBC Mode Ciphers Enabled
+**DEBUG: Processed Vulnerability ID 71049 - SSH Weak MAC Algorithms Enabled
+**DEBUG: Processed Vulnerability ID 65821 - SSL RC4 Cipher Suites Supported (Bar Mitzvah)
+**DEBUG: Processed Vulnerability ID 10969 - SNMP Request Cisco Router Information Disclosure
+**DEBUG: Processed Vulnerability ID 69551 - SSL Certificate Chain Contains RSA Keys Less Than 2048 bits
+**DEBUG: Processed Vulnerability ID 83875 - SSL/TLS Diffie-Hellman Modulus <= 1024 Bits (Logjam)
+**DEBUG: Processed Vulnerability ID 30218 - Terminal Services Encryption Level is not FIPS-140 Compliant

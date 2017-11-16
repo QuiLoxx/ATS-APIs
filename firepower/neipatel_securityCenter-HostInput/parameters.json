@@ -1,0 +1,9 @@
+{
+"hostname" : "",
+"FMCHostname" : "",
+"username" : "",
+"password" : "",
+"debug" : true,
+"netrange" : "",
+"addHosts" : true
+}

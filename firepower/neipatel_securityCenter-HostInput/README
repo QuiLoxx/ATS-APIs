@@ -1,0 +1,63 @@
+sf_host_input_agent.pl
+================
+
+Description:
+
+The sf_host_input_agent.pl script is a Perl utility that runs on either a
+3rd party client or a DC (release 4.9.1 or greater) directly.  It will
+retrieve scan data and convert it to host input CSV commands and store
+vulnerabilities as a 3rd party scanner on a DC.
+
+sf_host_input_agent Syntax:
+
+sf_host_input_agent.pl [options] <plugin>
+
+Options:
+- server: The server's (DC) IP address or hostname.
+- port: The server port to connect to. The default port is 8307.
+- ipv6: Enable IPv6 capability when connecting to DC. Enabling this will switch
+        communications to IPv6 only.
+- pkcs12: The pathname to the pkcs12 file. The default is to
+        auto-detect the pkcs12 file in the current directory.
+- password: Specify a password for the pkcs12, if there is one. The
+        default is no password.
+- syslog: Enable logging to syslog. If there is no Sys::Syslog installed/defined in OS
+         (like Windows system), this will be replaced by stderr.
+- stderr: Enable logging to STDERR.
+- logfile: Specify a log file pathname to capture logging output. The
+         default is no log file.
+- level: Specify a log level (3: debug, 2: info, 1: warning, 0: error)
+         The default is 2 (info).
+- runondc: Specify this utility is run from DC or not ('y' or 'n'). The default is 'n'.
+- csvfile: Specify a CSV output pathname. If a CSV file is specified, converted commands
+        will be saved as a file, not sending/running over DC. The
+        default is no CSV file is saved..
+- plugininfo: This parameter is specific for each plugin. It can be any string
+              passed into plugin module.
+
+Requirements:
+
+      This script requires that you have the third party Perl module
+      IO::Socket::SSL, IO::Socket::INET6 and all of its prerequisites
+      installed.
+
+      The 'QualysGuard' plugin requires XML::Simple, XML::Twig,
+      Net::IP, YAML::XS and LWP::UserAgent Perl modules to be
+      installed.
+
+      You MUST follow the directions in the Host Input API Guide for
+      issuing a certificate to the client.
+
+      The basic command line steps are as follows:
+
+         ssh as root into DC
+         cd /tmp
+         execute add_client [ IP address of client system ]
+         copy the resulting .pkcs12 to the HostInput client system
+
+Plugin Description:
+      See the READMEs in InputPlugins
+
+Examples:
+
+./sf_host_input_agent.pl -server=172.30.4.55 -level=3 -plugininfo=InputPlugins/QualysGuard.yaml QualysGuard

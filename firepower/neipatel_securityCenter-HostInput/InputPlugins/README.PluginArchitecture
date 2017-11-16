@@ -1,0 +1,29 @@
+The InputPlugins directory contains Perl modules that provide the input
+methods that the host input client uses.  If you wish to customize an input
+method or create your own, simply edit or add a file in this directory.  If
+you are creating a new plugin, please consider first copying an existing
+one to use as a template.
+
+The API for the plugins is fairly simple, consisting of only three functions.
+
+register():
+    This function is called for every plugin when the client program is
+    started.  The plugin should return a hashref with the following keys:
+    - init: A reference to the plugin's initialization function
+    - input: A reference to the plugin's input function
+    - description: A single-line description of what the plugin does.
+                   This string is used for command line usage display.
+    - info: the plugin info displayed to user
+    - parameters (optional): Details on what info contains
+
+init():
+    This function is called once for the input plugin that the user has
+    selected.  It is passed the command line options hash.  The most
+    important key in this hash is:
+    - plugin_info: This parameter is the input file the user has requested.
+                   Your plugin is expected to open this file and parse its
+                   contents when input() is called.
+
+input():
+    This function is expected to return a single string containing the
+    entire data set translated into CSV format.
