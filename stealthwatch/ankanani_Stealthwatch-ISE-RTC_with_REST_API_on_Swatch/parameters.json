@@ -1,0 +1,11 @@
+{
+	"debug" : true,
+	"SMC_hostname" : "",
+	"SMC_username" : "",
+	"SMC_password" : "",
+	"SMC_tenant_id" : "",
+	"ISE_hostname" : "",
+	"ISE_port" : "9060",
+	"ISE_username" : "",
+	"ISE_password" : ""
+}
