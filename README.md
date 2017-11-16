@@ -12,6 +12,8 @@ AMP for Endpoints
 
 Firepower
 
+Stealthwatch
+
 Threat Grid
 
 Umbrella (Investigate)
