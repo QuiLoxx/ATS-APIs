@@ -1,0 +1,7 @@
+{
+	"debug" : true,
+	"client_id": "",
+	"api_key" : "",
+	"endpoint" : "api.amp.cisco.com",
+	"group_name" : "Protect"
+}
