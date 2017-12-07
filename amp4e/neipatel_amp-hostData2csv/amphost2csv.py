@@ -50,16 +50,47 @@ elif not found:
     sys.exit()
 
 computers = amp.get("/v1/computers?group_guid[]={}".format(group_guid))
+# automate getting the id if its at all related to vulnerable endpoints pull it out
+event_types = amp.get("/v1/event_types")
+for event in event_types["data"]:
+    if "Vulnerable" in event["name"]:
+        event_type = event["id"]
+csv.write("SetSource, AMP4e\n")
+vul_id = 0
 for computer in computers["data"]:
+    guid = computer["connector_guid"]
     hostname = computer["hostname"]
     os = computer["operating_system"].split(" ")
+    if "Network" in os:
+        continue
     for nic in computer["network_addresses"]:
-        csv.write("AddHost, {}, {}\n".format(nic["ip"], nic["mac"]))
-        if var["debug"]:
+        if os[0] != ("Android"):
+            csv.write("AddHost, {}, {}\n".format(nic["ip"], nic["mac"]))
+        if var["debug"] and os[0] != ("Android"):
             log.write("**debug - new host added {} .... OK!\n".format(nic["ip"]))
-        csv.write("SetOS, {}, Microsoft, {} {}\n".format(nic["ip"], os[0]+" "+os[1], " ".join(os[2:])))
+        if os[0] == ("Windows"):
+            csv.write("SetOS, {}, Microsoft, {} {}\n".format(nic["ip"], os[0]+" "+os[1], " ".join(os[2:])))
+        if os[0] == ("OS"):
+            csv.write("SetOS, {}, Mac, {} {}\n".format(nic["ip"], os[0]+" "+os[1], " ".join(os[2:])))
+        # Remarked out. Android does not provide Network Address fields. Causes errors.
+        #if os[0] == ("Android"):
+        #    csv.write("SetOS, {}, Google, {} {}\n".format(nic["ip"], os[0]+" "+os[1], " ".join(os[2:])))
+        if os[0] == ("Linux"):
+            csv.write("SetOS, {}, Cent OS , {} {}\n".format(nic["ip"], os[0]+" "+os[1], " ".join(os[2:])))
         if var["debug"]:
             log.write("**debug - new os for host added {} .... OK!\n".format(nic["ip"]))
+    #now that we wrote the host details for the device lets find any vulnerabilities
+    cve = ""
+    vulns = amp.get("/v1/events?connector_guid[]={}&event_type[]={}".format(guid,event_type))
+    for vuln in vulns["data"]:
+        for item in vuln["vulnerabilities"]:
+            if item.has_key("name"):
+                name = item["name"] + item["version"]
+            cve = cve + item["cve"] + " "
+            split = item["cve"].split("-")
+            cve_string = "cve_ids: {}".format(cve)
+        csv.write("AddScanResult, {}, \"AMP4e\", {},,,{},,\"{}\" \n".format(nic["ip"],vul_id,name,cve_string))
+        vul_id = vul_id + 1
 
 log.close()
 csv.close()
