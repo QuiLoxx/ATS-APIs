@@ -1,7 +1,7 @@
 import amp_api
 import json
 import sys
-
+import subprocess
 # Import variables to get configuration
 config = json.loads(open("parameters.json").read())
 log = open("debug.log", "w")
@@ -14,6 +14,7 @@ var = {
     "api_key": config["api_key"],
     "endpoint": config["endpoint"],
     "group_name": config["group_name"],
+    "fmc": config["fmc"]
     }
 
 if var["debug"]:
@@ -53,6 +54,7 @@ computers = amp.get("/v1/computers?group_guid[]={}".format(group_guid))
 # automate getting the id if its at all related to vulnerable endpoints pull it out
 event_types = amp.get("/v1/event_types")
 for event in event_types["data"]:
+    #this could be more intelligent right now it only gets the last one, doesnt matter because there is only one but could change
     if "Vulnerable" in event["name"]:
         event_type = event["id"]
 csv.write("SetSource, AMP4e\n")
@@ -70,7 +72,7 @@ for computer in computers["data"]:
             log.write("**debug - new host added {} .... OK!\n".format(nic["ip"]))
         if os[0] == ("Windows"):
             csv.write("SetOS, {}, Microsoft, {} {}\n".format(nic["ip"], os[0]+" "+os[1], " ".join(os[2:])))
-        if os[0] == ("OS"):
+        if os[0] == ("OSX"):
             csv.write("SetOS, {}, Mac, {} {}\n".format(nic["ip"], os[0]+" "+os[1], " ".join(os[2:])))
         # Remarked out. Android does not provide Network Address fields. Causes errors.
         #if os[0] == ("Android"):
@@ -84,6 +86,7 @@ for computer in computers["data"]:
     vulns = amp.get("/v1/events?connector_guid[]={}&event_type[]={}".format(guid,event_type))
     for vuln in vulns["data"]:
         for item in vuln["vulnerabilities"]:
+            #this check needs to be  changed for python 3.x since it is only availible in 2.x
             if item.has_key("name"):
                 name = item["name"] + item["version"]
             cve = cve + item["cve"] + " "
@@ -91,6 +94,8 @@ for computer in computers["data"]:
             cve_string = "cve_ids: {}".format(cve)
         csv.write("AddScanResult, {}, \"AMP4e\", {},,,{},,\"{}\" \n".format(nic["ip"],vul_id,name,cve_string))
         vul_id = vul_id + 1
+csv.close()
+# Call the Perl ref. client for the Host Input
+pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(var["fmc"]), "-level=3","-plugininfo=hostinputcsv.txt", "csv" ])
 
 log.close()
-csv.close()

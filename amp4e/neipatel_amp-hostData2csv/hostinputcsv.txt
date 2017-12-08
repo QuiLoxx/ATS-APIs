@@ -1,0 +1,6 @@
+SetSource, AMP4e
+AddHost, 10.10.10.99, 00:50:56:8f:90:3f
+SetOS, 10.10.10.99, Microsoft, Windows 7, SP 1.0
+AddHost, 172.26.155.120, 00:50:56:8f:9d:9d
+SetOS, 172.26.155.120, Microsoft, Windows 7, SP 1.0
+AddScanResult, 172.26.155.120, "AMP4e", 0,,,Microsoft Office2016,,"cve_ids: CVE-2017-0106 CVE-2017-11774 CVE-2017-8506 CVE-2017-8507 " 

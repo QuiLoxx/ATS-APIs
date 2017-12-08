@@ -1,7 +1,8 @@
 {
 	"debug" : true,
-	"client_id": "",
-	"api_key" : "",
+	"client_id": "a5909190b7e40a032fd3",
+	"api_key" : "b222c999-313c-4b4c-a85b-bad7dc8d3c30",
 	"endpoint" : "api.amp.cisco.com",
-	"group_name" : "Protect"
+	"group_name" : "Exploit Prevention Group",
+	"fmc": "neipatel-fmc"
 }

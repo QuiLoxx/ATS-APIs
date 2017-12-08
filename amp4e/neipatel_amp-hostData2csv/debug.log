@@ -1,0 +1,14 @@
+**debug - loading in parameters now....
+**debug - parameters loaded in.... OK!
+**debug - begin parameter check....
+**debug - endpoint is api.amp.cisco.com.... OK!
+**debug - group_name is Exploit Prevention Group.... OK!
+**debug - client_id is a5909190b7e40a031fd3.... OK!
+**debug - api_key is b222c984-313c-4b4c-a85b-bad7dc8d3c30.... OK!
+**debug - fmc is neipatel-fmc.... OK!
+**debug - parameter check complete.... OK!
+**debug - group found with ID 64a8f0c3-a7a1-4ea8-a1f6-21d4d4cb8786.... OK!
+**debug - new host added 10.10.10.99 .... OK!
+**debug - new os for host added 10.10.10.99 .... OK!
+**debug - new host added 172.26.155.120 .... OK!
+**debug - new os for host added 172.26.155.120 .... OK!
