@@ -9,7 +9,7 @@ if __name__ == '__main__':
 	parameters = json.loads(open("parameters.json").read())
 	log = open("debug.log", "w")
 	csv = open("csvin.txt", "w")
-	csv.write("SetSource, Security Center")
+	csv.write("SetSource, Security Center\n")
 	HOSTNAME = parameters["hostname"]
 	USERNAME = parameters["username"]
 	FMC = parameters["FMCHostname"]
@@ -21,15 +21,14 @@ if __name__ == '__main__':
 		log.write("**DEBUG: PARAMETERS READ IN \nHostname: {} \nUsername: {}\nPassword: {}\nNetwork: {}\n".format(HOSTNAME,USERNAME,PASSWORD,NETWORK))
 
 	sc = SecurityCenter5(HOSTNAME)
-	sc.login(USERNAME,PASSWORD)
-
+	sc.login(USERNAME,PASSWORD, True)
 	details = sc.analysis(('ip', '=', NETWORK), tool='sumid', page=0, page_size=1000, sortDir='desc',sortField='severity')
 	for item in details:
 		plugin_id = item["pluginID"]
 		status = item["family"]["type"]
 		severity = item["severity"]["description"]
-		vulnerable_hosts = sc.analysis(('ip', '=', NETWORK), ('pluginID', '=', str(plugin_id)), tool='vulndetails')
 		if status == "active" and severity != "Informative":
+			vulnerable_hosts = sc.analysis(('ip', '=', NETWORK), ('pluginID', '=', str(plugin_id)), tool='vulndetails')
 			for host in vulnerable_hosts:
 				cves = host["cve"].replace(","," ")
 				if ADDHOSTS:
@@ -48,10 +47,8 @@ if __name__ == '__main__':
 				log.write("**DEBUG: Processed Vulnerability ID {} - {}\n".format(plugin_id, item["name"]))
 				print "**DEBUG: Processed Vulnerability ID {} - {}\n".format(plugin_id, item["name"])
 	csv.write("ScanFlush\n")
+	csv.close()
+	sc.logout
+	csv.close()
 	# Call the Perl ref. client for the Host Input
 	pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(FMC), "-level=3","-plugininfo=csvin.txt", "csv" ])
-
-
-	sc.logout
-	log.close()
-	csv.close()

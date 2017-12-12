@@ -1,6 +1,6 @@
 **Summary**
 
-This tool uses both python and perl to establish communications with Security Center and FMC to add vulnerability scan data (from Security Center) to the Host profile in FMC.
+This tool uses both python and perl to establish communications with Security Center and FMC to add vulnerability scan data (from Security Center) to the Host profile in FMC. For more detailed instructions please use the "Readme.pdf"
 
 **Files**
 

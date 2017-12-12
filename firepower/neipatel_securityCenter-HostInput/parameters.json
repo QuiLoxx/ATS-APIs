@@ -1,9 +1,9 @@
 {
-"hostname" : "neipatel-securitycenter.cisco.com",
+"hostname" : "securitycenter.lab.local",
 "FMCHostname" : "lab-fmc.cisco.com",
-"username" : "labuser",
+"username" : "username",
 "password" : "password",
 "debug" : true,
-"netrange" : "10.0.15.0/24",
+"netrange" : "10.0.0.0/8",
 "addHosts" : true
 }
