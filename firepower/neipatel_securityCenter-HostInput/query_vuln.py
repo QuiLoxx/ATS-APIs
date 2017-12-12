@@ -40,7 +40,7 @@ if __name__ == '__main__':
 				else:
 					protocol = host["protocol"].lower()
 				#Reference format: AddScanResult, ipaddr, scanner_id, vuln_id, port, protocol, name, description, cve_ids, bugtraq_ids
-				line_b = "AddScanResult,{},\"SecurityCenter\",{},{},\"{}\",\"{}\",\"{}\",\"cve_ids: {}\",\"bugtraq_ids:\"\n".format(host["ip"],plugin_id,host["port"],protocol,host["pluginName"],host["synopsis"],cves)
+				line_b = "AddScanResult,{},\"Security Center\",{},{},\"{}\",\"{}\",\"{}\",\"cve_ids: {}\",\"bugtraq_ids:\"\n".format(host["ip"],plugin_id,host["port"],protocol,host["pluginName"],host["synopsis"],cves)
 				if ADDHOSTS:
 					csv.write(line_a)
 				csv.write(line_b)

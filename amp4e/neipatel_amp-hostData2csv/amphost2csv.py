@@ -57,8 +57,8 @@ for event in event_types["data"]:
     #this could be more intelligent right now it only gets the last one, doesnt matter because there is only one but could change
     if "Vulnerable" in event["name"]:
         event_type = event["id"]
-csv.write("SetSource, AMP4e\n")
-vul_id = 0
+csv.write("SetSource, AMP for Endpoints\n")
+vul_id = 10024
 for computer in computers["data"]:
     guid = computer["connector_guid"]
     hostname = computer["hostname"]
@@ -92,7 +92,7 @@ for computer in computers["data"]:
             cve = cve + item["cve"] + " "
             split = item["cve"].split("-")
             cve_string = "cve_ids: {}".format(cve)
-        csv.write("AddScanResult, {}, \"AMP4e\", {},,,{},,\"{}\" \n".format(nic["ip"],vul_id,name,cve_string))
+        csv.write("AddScanResult, {}, \"AMP for Endpoints\", {},,,{},,\"{}\", \"bugtraq_ids:\"\n".format(nic["ip"],vul_id,name,cve_string))
         vul_id = vul_id + 1
 csv.close()
 # Call the Perl ref. client for the Host Input
