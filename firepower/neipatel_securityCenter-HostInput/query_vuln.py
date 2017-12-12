@@ -47,7 +47,7 @@ if __name__ == '__main__':
 			if DEBUG:
 				log.write("**DEBUG: Processed Vulnerability ID {} - {}\n".format(plugin_id, item["name"]))
 				print "**DEBUG: Processed Vulnerability ID {} - {}\n".format(plugin_id, item["name"])
-
+	csv.write("ScanFlush\n")
 	# Call the Perl ref. client for the Host Input
 	pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(FMC), "-level=3","-plugininfo=csvin.txt", "csv" ])
 

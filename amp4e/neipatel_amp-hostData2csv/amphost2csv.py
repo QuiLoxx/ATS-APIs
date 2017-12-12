@@ -94,6 +94,7 @@ for computer in computers["data"]:
             cve_string = "cve_ids: {}".format(cve)
         csv.write("AddScanResult, {}, \"AMP for Endpoints\", {},,,{},,\"{}\", \"bugtraq_ids:\"\n".format(nic["ip"],vul_id,name,cve_string))
         vul_id = vul_id + 1
+csv.write("ScanFlush")
 csv.close()
 # Call the Perl ref. client for the Host Input
 pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(var["fmc"]), "-level=3","-plugininfo=hostinputcsv.txt", "csv" ])
