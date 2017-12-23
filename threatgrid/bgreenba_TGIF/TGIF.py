@@ -9,17 +9,17 @@ import logging, requests, sys, configparser, datetime, argparse
 
 def valid_date(s):
     try:
-        return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
+        return datetime.datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%dT%H:%M:%SZ")
     except ValueError:
         msg = "Not a valid date: '{0}'.".format(s)
         raise argparse.ArgumentTypeError(msg)
     
 def getopts(argv):
     parser = argparse.ArgumentParser(
-        description='Retrieve threat intel feeds from Cisco Threat Grid',
+        description='TGIF: Threat Grid Intelligence Feeds',
         epilog='''This script can be used to retrieve threat intel feeds from the Cisco Threat Grid API.
             It reads configuration paramaters from the command line, and defaults from a configuration file.
-            Usage of this script requires a valid API key. This utility is provided as an example, and with
+            Usage of this script requires a valid API key. This utility is provided as an example, with
             no guarantees or support options.''' 
         )
     parser.add_argument('-a', '--after_time',
@@ -31,7 +31,7 @@ def getopts(argv):
                             (default now, or one hour after after_time if specified)''',
                         type=valid_date)
     parser.add_argument('-c', '--cfg_file', help='specify a configuration file (default %(default)s))',
-                        type=argparse.FileType('r'), default='TGiFeeds.cfg')
+                        type=argparse.FileType('r'), default='TGIF.cfg')
     parser.add_argument('-e', '--experiment', help='Do everything except request the feed. Most useful with -v',
                         action='store_true')
     parser.add_argument('-k', '--api_key', help='specify an API key value (overrides config file)')
@@ -167,25 +167,37 @@ logging.basicConfig(filename=log_file,
 logger = logging.getLogger(__name__)
 
 ##time stuff
-#validate start and end times if given
+#validate start and end times if both given
+if args['after_time'] is not None and args['before_time'] is not None: 
+    after_time=args['after_time'] 
+    before_time=args['before_time']
+    if after_time>before_time: 
+        print('specified after_time {} is later than specified before_time {}... this will never work. Aborting.'.format(after_time, before_time))
+        exit()
 #calculate start and end times if both not given
-if args['before_time'] is None and args['after_time'] is None:
+elif args['before_time'] is None and args['after_time'] is None:
     now_time=(datetime.datetime.now())
     after_time=(now_time-datetime.timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
     before_time=now_time.strftime("%Y-%m-%dT%H:%M:%SZ")
     verbose('calculated default time window: {} to {}'.format(after_time, before_time))
 #calculate one if only the other was given
 elif args['before_time'] is None:
-    #one was set, and it's not before_time
+    #at least one datetime was set, and before_time is not
+    after_time=args['after_time']
     #set before_time to 1 hr after after_time
-    before_time=(after_time+datetime.timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    before_time=(datetime.datetime.strptime(after_time,"%Y-%m-%dT%H:%M:%SZ")+datetime.timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
     verbose('time window end set to one hour after specified after_time: {}'.format(before_time))
-else:
-    #one was set, and it was before_time
+elif args['after_time'] is None:
+    #at least one datetime was set, and after_time is not
+    before_time=args['before_time']
     #set after_time to 1 hr before before_time
-    after_time=(before_time-datetime.timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")                              
+    after_time=(datetime.datetime.strptime(before_time,"%Y-%m-%dT%H:%M:%SZ")-datetime.timedelta(hours=1)).strftime("%Y-%m-%dT%H:%M:%SZ")                              
     verbose('time window start set to one hour before specified before_time: {}'.format(after_time))
-                                      
+else: 
+    #somehow in a two value truth table we have found a fifth possibility
+    print('Error in space time continuum. I have a confuse')
+    exit()
+                   
 ###make request string
 ##make query string out of parameters
 QSitems={}
