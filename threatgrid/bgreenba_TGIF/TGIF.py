@@ -36,7 +36,8 @@ def getopts(argv):
                         action='store_true')
     parser.add_argument('-k', '--api_key', help='specify an API key value (overrides config file)')
     parser.add_argument('-l', '--log_file', help='specify a log file (overrides config file)')
-    parser.add_argument('-m', '--feed_menu', help='print out the menu of available feeds and exit TODO')
+    parser.add_argument('-m', '--feed_menu', help='print out the menu of available feeds in the config file (not from the API) and exit',
+                        action='store_true')
     parser.add_argument('-o', '--out_file', help='specify an output file (default STDOUT)',
                         type=argparse.FileType('w'), default=sys.stdout)
     parser.add_argument('-p', '--parameters', help='specify additional parameters as a single string TODO')
@@ -102,10 +103,23 @@ def verbose(msg):
 # get cmdline options
 args=vars(getopts(sys.argv))
 verbose('\n'.join(['Command line options, including defaults','\n'.join('{}={}'.format(key, val) for key, val in args.items())]))
+
+#misc cmdline sanity checking
+if args['feedName'] is None and args['feed_menu'] is False and args['rtfm'] is False:
+    print('feedName is required unless --rtfm or -m/--feed_menu is specified. Enter "{} -h" for usage guidelines.'.format(sys.argv[0]))
+    exit()
+
+
 # Read the config file to get settings
 verbose('reading config file '+args['cfg_file'].name)
 config = configparser.RawConfigParser()
 config.read(args['cfg_file'].name)
+
+#if -m specified, gather menu, print, and exit
+if args['feed_menu'] is True:
+    print('Available Feeds:')
+    print('\n'.join(['{}'.format(key) for key, value in config.items('Feeds')]))
+    exit()
 
 # Read API key and strip whitespace
 if args['api_key'] is None:
