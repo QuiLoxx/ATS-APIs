@@ -1,5 +1,5 @@
 # This script will request feeds and dump them to stdout as received. It reads
-# a config file, by default ./TGiFeeds.cfg, to get hostname, feed, and API key
+# a config file, by default ./TGIFF.cfg, to get hostname, feed, and API key
 # information.
 #
 
@@ -16,7 +16,7 @@ def valid_date(s):
     
 def getopts(argv):
     parser = argparse.ArgumentParser(
-        description='TGIF: Threat Grid Intelligence Feeds',
+        description='TGIFF: Threat Grid Intelligence Feeds Fetcher',
         epilog='''This script can be used to retrieve threat intel feeds from the Cisco Threat Grid API.
             It reads configuration paramaters from the command line, and defaults from a configuration file.
             Usage of this script requires a valid API key. This utility is provided as an example, with
@@ -31,7 +31,7 @@ def getopts(argv):
                             (default now, or one hour after after_time if specified)''',
                         type=valid_date)
     parser.add_argument('-c', '--cfg_file', help='specify a configuration file (default %(default)s))',
-                        type=argparse.FileType('r'), default='TGIF.cfg')
+                        type=argparse.FileType('r'), default='TGIFF.cfg')
     parser.add_argument('-e', '--experiment', help='Do everything except request the feed. Most useful with -v',
                         action='store_true')
     parser.add_argument('-k', '--api_key', help='specify an API key value (overrides config file)')
@@ -223,7 +223,7 @@ QSitems['api_key'] = api_key
 QSitems['after'] = after_time
 QSitems['before'] = before_time        
                                       
-###make request (or don't)
+###make request
 url = 'https://{}/{}{}'.format(hostName, feedTypePath, feedPath)
 verbose(''.join(['URL to request: {}?'.format(url), '&'.join('{}={}'.format(key, val) for key, val in QSitems.items())]))
 if args['experiment'] is True:  print('Request not submitted because -e or --experiment was specified on the command line')
