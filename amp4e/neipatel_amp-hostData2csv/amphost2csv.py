@@ -67,7 +67,10 @@ for computer in computers["data"]:
         continue
     for nic in computer["network_addresses"]:
         if os[0] != ("Android"):
-            csv.write("AddHost, {}, {}\n".format(nic["ip"], nic["mac"]))
+            if nic.has_key("mac"):
+                csv.write("AddHost, {}, {}\n".format(nic["ip"], nic["mac"]))
+            else:
+                csv.write("AddHost, {}, {}\n".format(nic["ip"])
         if var["debug"] and os[0] != ("Android"):
             log.write("**debug - new host added {} .... OK!\n".format(nic["ip"]))
         if os[0] == ("Windows"):
@@ -90,7 +93,6 @@ for computer in computers["data"]:
             if item.has_key("name"):
                 name = item["name"] + item["version"]
             cve = cve + item["cve"] + " "
-            split = item["cve"].split("-")
             cve_string = "cve_ids: {}".format(cve)
         csv.write("AddScanResult, {}, \"AMP for Endpoints\", {},,,{},,\"{}\", \"bugtraq_ids:\"\n".format(nic["ip"],vul_id,name,cve_string))
         vul_id = vul_id + 1
