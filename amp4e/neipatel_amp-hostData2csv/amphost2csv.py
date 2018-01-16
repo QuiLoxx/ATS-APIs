@@ -70,7 +70,7 @@ for computer in computers["data"]:
             if nic.has_key("mac"):
                 csv.write("AddHost, {}, {}\n".format(nic["ip"], nic["mac"]))
             else:
-                csv.write("AddHost, {}, {}\n".format(nic["ip"])
+                csv.write("AddHost, {}, {}\n".format(nic["ip"]))
         if var["debug"] and os[0] != ("Android"):
             log.write("**debug - new host added {} .... OK!\n".format(nic["ip"]))
         if os[0] == ("Windows"):
@@ -99,6 +99,8 @@ for computer in computers["data"]:
 csv.write("ScanFlush")
 csv.close()
 # Call the Perl ref. client for the Host Input
-pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(var["fmc"]), "-level=3","-plugininfo=hostinputcsv.txt", "csv" ])
-
+if var["debug"]:
+    pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(var["fmc"]), "-level=3","-plugininfo=hostinputcsv.txt", "csv" ])
+else:
+    pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(var["fmc"]),"-plugininfo=hostinputcsv.txt", "csv" ])
 log.close()
