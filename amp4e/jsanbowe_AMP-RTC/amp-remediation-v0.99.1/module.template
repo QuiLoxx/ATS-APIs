@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module name="AMP">
+  <global_config>
+    <display_name>AMP Remediation</display_name>
+    <description>Change AMP Computer Group by IP addresses using AMP Cloud</description>
+    <version>0.99.1</version>
+    <binary>amp.pl</binary>
+  </global_config>
+  <config_template online_help="topic://EditInstance">
+    <string>
+      <name>user_name</name>
+      <display_name>API Client ID</display_name>
+    </string>
+    <password>
+      <name>login_password</name>
+      <display_name>API Key</display_name>
+    </password>
+    <string>
+      <name>group_name</name>
+      <display_name>Group Used as Quarantine</display_name>
+    </string>
+    <boolean>
+      <name>logging</name>
+      <display_name>SYSLOG Logging</display_name>
+      <default_value>true</default_value>
+ 	  </boolean>
+    <list required="false">
+      <name>whitelist</name>
+      <display_name>White List</display_name>
+        <item_type>
+          <network_li/>
+        </item_type>
+    </list>
+  </config_template>
+  <remediation_type name="quarantine_src">
+    <display_name>Quarantine Source IP</display_name>
+    <description>Quarantine the Source IP of an event</description>
+    <policy_event_data>
+      <pe_item>src_ip_addr</pe_item>
+      <pe_item>policy_id</pe_item>
+      <pe_item>rule_id</pe_item>
+      <pe_item>sig_id</pe_item>
+    </policy_event_data>
+  </remediation_type>
+  <remediation_type name="quarantine_dst">
+    <display_name>Quarantine Destination IP</display_name>
+    <description>Quarantine the Destination IP of an event</description>
+    <policy_event_data>
+      <pe_item>dest_ip_addr</pe_item>
+      <pe_item>policy_id</pe_item>
+      <pe_item>rule_id</pe_item>
+      <pe_item>sig_id</pe_item>
+    </policy_event_data>
+  </remediation_type>
+</module>
