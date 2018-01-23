@@ -63,9 +63,13 @@ for computer in computers["data"]:
     guid = computer["connector_guid"]
     hostname = computer["hostname"]
     os = computer["operating_system"].split(" ")
+    #skip any network devices
     if "Network" in os:
         continue
     for nic in computer["network_addresses"]:
+        #skip any entries with no IP ass FMC requires IP as key indicator
+        if nic["ip"] == "":
+            continue
         if os[0] != ("Android"):
             if nic.has_key("mac"):
                 csv.write("AddHost, {}, {}\n".format(nic["ip"], nic["mac"]))
@@ -99,8 +103,10 @@ for computer in computers["data"]:
 csv.write("ScanFlush")
 csv.close()
 # Call the Perl ref. client for the Host Input
+
 if var["debug"]:
     pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(var["fmc"]), "-level=3","-plugininfo=hostinputcsv.txt", "csv" ])
 else:
     pipe = subprocess.call(["./sf_host_input_agent.pl", "-server={}".format(var["fmc"]),"-plugininfo=hostinputcsv.txt", "csv" ])
+
 log.close()
