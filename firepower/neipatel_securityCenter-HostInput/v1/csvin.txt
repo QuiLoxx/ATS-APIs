@@ -1,0 +1,349 @@
+SetSource, SecurityCenter 5.x
+AddHost, 8.8.8.8
+AddScanResult, 8.8.8.8, "SecurityCenter 5.x", 10539, 53, udp, "DNS Server Recursive Query Cache Poisoning Weakness", "The remote name server allows recursive queries to be performed by the host running nessusd.", "cve_ids: CVE-1999-0024", "bugtraq_ids:"
+AddScanResult, 8.8.8.8, "SecurityCenter 5.x", 35450, 53, udp, "DNS Server Spoofed Request Amplification DDoS", "The remote DNS server could be used in a distributed denial of service attack.", "cve_ids: CVE-2006-0987", "bugtraq_ids:"
+AddScanResult, 8.8.8.8, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 10.0.0.4
+AddScanResult, 10.0.0.4, "SecurityCenter 5.x", 12217, 53, udp, "DNS Server Cache Snooping Remote Information Disclosure", "The remote DNS server is vulnerable to cache snooping attacks.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 10.0.0.4, "SecurityCenter 5.x", 35291, 443, tcp, "SSL Certificate Signed Using Weak Hashing Algorithm", "An SSL certificate in the certificate chain has been signed using a weak hash algorithm.", "cve_ids: CVE-2004-2761", "bugtraq_ids:"
+AddScanResult, 10.0.0.4, "SecurityCenter 5.x", 51192, 443, tcp, "SSL Certificate Cannot Be Trusted", "The SSL certificate for this service cannot be trusted.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 10.0.0.4, "SecurityCenter 5.x", 57582, 443, tcp, "SSL Self-Signed Certificate", "The SSL certificate chain for this service ends in an unrecognized self-signed certificate.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 10.0.0.4, "SecurityCenter 5.x", 70658, 22, tcp, "SSH Server CBC Mode Ciphers Enabled", "The SSH server is configured to use Cipher Block Chaining.", "cve_ids: CVE-2008-5161", "bugtraq_ids:"
+AddHost, 10.0.0.8
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 12217, 53, udp, "DNS Server Cache Snooping Remote Information Disclosure", "The remote DNS server is vulnerable to cache snooping attacks.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 45411, 8834, tcp, "SSL Certificate with Wrong Hostname", "The SSL certificate for this service is for a different host.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 51192, 8834, tcp, "SSL Certificate Cannot Be Trusted", "The SSL certificate for this service cannot be trusted.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 70658, 22, tcp, "SSH Server CBC Mode Ciphers Enabled", "The SSH server is configured to use Cipher Block Chaining.", "cve_ids: CVE-2008-5161", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 105556, 0, tcp, "CentOS 7 : microcode_ctl (CESA-2018:0012) (Spectre)", "The remote CentOS host is missing a security update.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 105588, 0, tcp, "CentOS 7 : kernel (CESA-2018:0007) (Meltdown) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-5715 CVE-2017-5753 CVE-2017-5754", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 105591, 0, tcp, "CentOS 7 : linux-firmware (CESA-2018:0014) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 106107, 0, tcp, "CentOS 6 / 7 : microcode_ctl (CESA-2018:0093) (Spectre)", "The remote CentOS host is missing a security update.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 106108, 0, tcp, "CentOS 7 : linux-firmware (CESA-2018:0094) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 106234, 0, tcp, "CentOS 7 : bind (CESA-2018:0102)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-3145", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 106353, 0, tcp, "CentOS 7 : kernel (CESA-2018:0151) (Meltdown) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2015-8539 CVE-2017-12192 CVE-2017-12193 CVE-2017-15649 CVE-2017-5715 CVE-2017-5753 CVE-2017-5754 CVE-2017-7472", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 106354, 0, tcp, "CentOS 7 : dhcp (CESA-2018:0158)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-3144", "bugtraq_ids:"
+AddScanResult, 10.0.0.8, "SecurityCenter 5.x", 106566, 0, tcp, "CentOS 7 : systemd (CESA-2018:0260)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2018-1049", "bugtraq_ids:"
+AddHost, 10.0.0.9
+AddScanResult, 10.0.0.9, "SecurityCenter 5.x", 70658, 22, tcp, "SSH Server CBC Mode Ciphers Enabled", "The SSH server is configured to use Cipher Block Chaining.", "cve_ids: CVE-2008-5161", "bugtraq_ids:"
+AddHost, 13.72.98.3
+AddScanResult, 13.72.98.3, "SecurityCenter 5.x", 35291, 443, tcp, "SSL Certificate Signed Using Weak Hashing Algorithm", "An SSL certificate in the certificate chain has been signed using a weak hash algorithm.", "cve_ids: CVE-2004-2761", "bugtraq_ids:"
+AddScanResult, 13.72.98.3, "SecurityCenter 5.x", 51192, 443, tcp, "SSL Certificate Cannot Be Trusted", "The SSL certificate for this service cannot be trusted.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 13.72.98.3, "SecurityCenter 5.x", 57582, 443, tcp, "SSL Self-Signed Certificate", "The SSL certificate chain for this service ends in an unrecognized self-signed certificate.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 13.72.98.3, "SecurityCenter 5.x", 70658, 22, tcp, "SSH Server CBC Mode Ciphers Enabled", "The SSH server is configured to use Cipher Block Chaining.", "cve_ids: CVE-2008-5161", "bugtraq_ids:"
+AddHost, 52.25.17.132
+AddScanResult, 52.25.17.132, "SecurityCenter 5.x", 11213, 80, tcp, "HTTP TRACE / TRACK Methods Allowed", "Debugging functions are enabled on the remote web server.", "cve_ids: CVE-2003-1567 CVE-2004-2320 CVE-2010-0386", "bugtraq_ids:"
+AddScanResult, 52.25.17.132, "SecurityCenter 5.x", 11213, 443, tcp, "HTTP TRACE / TRACK Methods Allowed", "Debugging functions are enabled on the remote web server.", "cve_ids: CVE-2003-1567 CVE-2004-2320 CVE-2010-0386", "bugtraq_ids:"
+AddScanResult, 52.25.17.132, "SecurityCenter 5.x", 11213, 8080, tcp, "HTTP TRACE / TRACK Methods Allowed", "Debugging functions are enabled on the remote web server.", "cve_ids: CVE-2003-1567 CVE-2004-2320 CVE-2010-0386", "bugtraq_ids:"
+AddScanResult, 52.25.17.132, "SecurityCenter 5.x", 11213, 8443, tcp, "HTTP TRACE / TRACK Methods Allowed", "Debugging functions are enabled on the remote web server.", "cve_ids: CVE-2003-1567 CVE-2004-2320 CVE-2010-0386", "bugtraq_ids:"
+AddScanResult, 52.25.17.132, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 52.25.17.132, "SecurityCenter 5.x", 42873, 8443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 77.104.156.85
+AddScanResult, 77.104.156.85, "SecurityCenter 5.x", 15855, 110, tcp, "POP3 Cleartext Logins Permitted", "The remote POP3 daemon allows credentials to be transmitted in cleartext.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 77.104.156.85, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 77.104.156.85, "SecurityCenter 5.x", 91572, 21, tcp, "OpenSSL AES-NI Padding Oracle MitM Information Disclosure", "It was possible to obtain sensitive information from the remote host with TLS-enabled services.", "cve_ids: CVE-2016-2107", "bugtraq_ids:"
+AddScanResult, 77.104.156.85, "SecurityCenter 5.x", 91572, 110, tcp, "OpenSSL AES-NI Padding Oracle MitM Information Disclosure", "It was possible to obtain sensitive information from the remote host with TLS-enabled services.", "cve_ids: CVE-2016-2107", "bugtraq_ids:"
+AddScanResult, 77.104.156.85, "SecurityCenter 5.x", 91572, 143, tcp, "OpenSSL AES-NI Padding Oracle MitM Information Disclosure", "It was possible to obtain sensitive information from the remote host with TLS-enabled services.", "cve_ids: CVE-2016-2107", "bugtraq_ids:"
+AddScanResult, 77.104.156.85, "SecurityCenter 5.x", 91572, 993, tcp, "OpenSSL AES-NI Padding Oracle MitM Information Disclosure", "It was possible to obtain sensitive information from the remote host with TLS-enabled services.", "cve_ids: CVE-2016-2107", "bugtraq_ids:"
+AddScanResult, 77.104.156.85, "SecurityCenter 5.x", 91572, 995, tcp, "OpenSSL AES-NI Padding Oracle MitM Information Disclosure", "It was possible to obtain sensitive information from the remote host with TLS-enabled services.", "cve_ids: CVE-2016-2107", "bugtraq_ids:"
+AddHost, 78.46.45.177
+AddScanResult, 78.46.45.177, "SecurityCenter 5.x", 70658, 22, tcp, "SSH Server CBC Mode Ciphers Enabled", "The SSH server is configured to use Cipher Block Chaining.", "cve_ids: CVE-2008-5161", "bugtraq_ids:"
+AddScanResult, 78.46.45.177, "SecurityCenter 5.x", 71049, 22, tcp, "SSH Weak MAC Algorithms Enabled", "The remote SSH server is configured to allow MD5 and 96-bit MAC algorithms.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 78.46.45.177, "SecurityCenter 5.x", 90317, 22, tcp, "SSH Weak Algorithms Supported", "The remote SSH server is configured to allow weak encryption algorithms or no algorithm at all.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 98.138.252.30
+AddScanResult, 98.138.252.30, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 98.138.252.30, "SecurityCenter 5.x", 62565, 443, tcp, "Transport Layer Security (TLS) Protocol CRIME Vulnerability", "The remote service has a configuration that may make it vulnerable to the CRIME attack.", "cve_ids: CVE-2012-4929 CVE-2012-4930", "bugtraq_ids:"
+AddHost, 98.138.252.38
+AddScanResult, 98.138.252.38, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 98.138.252.39
+AddScanResult, 98.138.252.39, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 98.138.253.109
+AddScanResult, 98.138.253.109, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 98.138.253.109, "SecurityCenter 5.x", 62565, 443, tcp, "Transport Layer Security (TLS) Protocol CRIME Vulnerability", "The remote service has a configuration that may make it vulnerable to the CRIME attack.", "cve_ids: CVE-2012-4929 CVE-2012-4930", "bugtraq_ids:"
+AddHost, 98.139.180.180
+AddScanResult, 98.139.180.180, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 104.131.160.223
+AddScanResult, 104.131.160.223, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 104.131.160.223, "SecurityCenter 5.x", 81777, 27017, tcp, "MongoDB Service Without Authentication Detection", "The remote host is running a database system that does not have authentication enabled.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 111.230.140.51
+AddScanResult, 111.230.140.51, "SecurityCenter 5.x", 70658, 22, tcp, "SSH Server CBC Mode Ciphers Enabled", "The SSH server is configured to use Cipher Block Chaining.", "cve_ids: CVE-2008-5161", "bugtraq_ids:"
+AddScanResult, 111.230.140.51, "SecurityCenter 5.x", 71049, 22, tcp, "SSH Weak MAC Algorithms Enabled", "The remote SSH server is configured to allow MD5 and 96-bit MAC algorithms.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 111.230.140.51, "SecurityCenter 5.x", 90317, 22, tcp, "SSH Weak Algorithms Supported", "The remote SSH server is configured to allow weak encryption algorithms or no algorithm at all.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 127.0.0.1
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 12217, 53, udp, "DNS Server Cache Snooping Remote Information Disclosure", "The remote DNS server is vulnerable to cache snooping attacks.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 45411, 8834, tcp, "SSL Certificate with Wrong Hostname", "The SSL certificate for this service is for a different host.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 51192, 8834, tcp, "SSL Certificate Cannot Be Trusted", "The SSL certificate for this service cannot be trusted.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 70658, 22, tcp, "SSH Server CBC Mode Ciphers Enabled", "The SSH server is configured to use Cipher Block Chaining.", "cve_ids: CVE-2008-5161", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 105556, 0, tcp, "CentOS 7 : microcode_ctl (CESA-2018:0012) (Spectre)", "The remote CentOS host is missing a security update.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 105588, 0, tcp, "CentOS 7 : kernel (CESA-2018:0007) (Meltdown) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-5715 CVE-2017-5753 CVE-2017-5754", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 105591, 0, tcp, "CentOS 7 : linux-firmware (CESA-2018:0014) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 106107, 0, tcp, "CentOS 6 / 7 : microcode_ctl (CESA-2018:0093) (Spectre)", "The remote CentOS host is missing a security update.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 106108, 0, tcp, "CentOS 7 : linux-firmware (CESA-2018:0094) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-5715", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 106234, 0, tcp, "CentOS 7 : bind (CESA-2018:0102)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-3145", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 106353, 0, tcp, "CentOS 7 : kernel (CESA-2018:0151) (Meltdown) (Spectre)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2015-8539 CVE-2017-12192 CVE-2017-12193 CVE-2017-15649 CVE-2017-5715 CVE-2017-5753 CVE-2017-5754 CVE-2017-7472", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 106354, 0, tcp, "CentOS 7 : dhcp (CESA-2018:0158)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2017-3144", "bugtraq_ids:"
+AddScanResult, 127.0.0.1, "SecurityCenter 5.x", 106566, 0, tcp, "CentOS 7 : systemd (CESA-2018:0260)", "The remote CentOS host is missing one or more security updates.", "cve_ids: CVE-2018-1049", "bugtraq_ids:"
+AddHost, 130.57.5.70
+AddScanResult, 130.57.5.70, "SecurityCenter 5.x", 57792, 80, tcp, "Apache HTTP Server httpOnly Cookie Information Disclosure", "The web server running on the remote host is affected by an information disclosure vulnerability.", "cve_ids: CVE-2012-0053", "bugtraq_ids:"
+AddHost, 161.47.10.70
+AddScanResult, 161.47.10.70, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.3.100
+AddScanResult, 172.217.3.100, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.5.228
+AddScanResult, 172.217.5.228, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.6.196
+AddScanResult, 172.217.6.196, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.6.228
+AddScanResult, 172.217.6.228, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.4
+AddScanResult, 172.217.7.4, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.5
+AddScanResult, 172.217.7.5, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.5, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.6
+AddScanResult, 172.217.7.6, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.7
+AddScanResult, 172.217.7.7, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.8
+AddScanResult, 172.217.7.8, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.9
+AddScanResult, 172.217.7.9, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.10
+AddScanResult, 172.217.7.10, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.11
+AddScanResult, 172.217.7.11, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.12
+AddScanResult, 172.217.7.12, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.13
+AddScanResult, 172.217.7.13, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.14
+AddScanResult, 172.217.7.14, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.15
+AddScanResult, 172.217.7.15, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.16
+AddScanResult, 172.217.7.16, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.17
+AddScanResult, 172.217.7.17, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.18
+AddScanResult, 172.217.7.18, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.20
+AddScanResult, 172.217.7.20, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.21
+AddScanResult, 172.217.7.21, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.22
+AddScanResult, 172.217.7.22, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.23
+AddScanResult, 172.217.7.23, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.24
+AddScanResult, 172.217.7.24, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.25
+AddScanResult, 172.217.7.25, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.26
+AddScanResult, 172.217.7.26, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.27
+AddScanResult, 172.217.7.27, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.28
+AddScanResult, 172.217.7.28, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.29
+AddScanResult, 172.217.7.29, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.30
+AddScanResult, 172.217.7.30, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.31
+AddScanResult, 172.217.7.31, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.32
+AddScanResult, 172.217.7.32, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.33
+AddScanResult, 172.217.7.33, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.34
+AddScanResult, 172.217.7.34, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.35
+AddScanResult, 172.217.7.35, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.36
+AddScanResult, 172.217.7.36, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.37
+AddScanResult, 172.217.7.37, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.37, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.38
+AddScanResult, 172.217.7.38, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.39
+AddScanResult, 172.217.7.39, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.40
+AddScanResult, 172.217.7.40, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.41
+AddScanResult, 172.217.7.41, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.42
+AddScanResult, 172.217.7.42, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.43
+AddScanResult, 172.217.7.43, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.44
+AddScanResult, 172.217.7.44, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.45
+AddScanResult, 172.217.7.45, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.46
+AddScanResult, 172.217.7.46, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.47
+AddScanResult, 172.217.7.47, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.48
+AddScanResult, 172.217.7.48, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.49
+AddScanResult, 172.217.7.49, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.50
+AddScanResult, 172.217.7.50, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.52
+AddScanResult, 172.217.7.52, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.53
+AddScanResult, 172.217.7.53, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.54
+AddScanResult, 172.217.7.54, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.55
+AddScanResult, 172.217.7.55, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.56
+AddScanResult, 172.217.7.56, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.57
+AddScanResult, 172.217.7.57, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.58
+AddScanResult, 172.217.7.58, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.59
+AddScanResult, 172.217.7.59, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.60
+AddScanResult, 172.217.7.60, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.61
+AddScanResult, 172.217.7.61, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.62
+AddScanResult, 172.217.7.62, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.63
+AddScanResult, 172.217.7.63, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.128
+AddScanResult, 172.217.7.128, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.128, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.129
+AddScanResult, 172.217.7.129, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.130
+AddScanResult, 172.217.7.130, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.131
+AddScanResult, 172.217.7.131, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.132
+AddScanResult, 172.217.7.132, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.133
+AddScanResult, 172.217.7.133, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.134
+AddScanResult, 172.217.7.134, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.135
+AddScanResult, 172.217.7.135, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.136
+AddScanResult, 172.217.7.136, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.137
+AddScanResult, 172.217.7.137, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.138
+AddScanResult, 172.217.7.138, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.139
+AddScanResult, 172.217.7.139, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.140
+AddScanResult, 172.217.7.140, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.141
+AddScanResult, 172.217.7.141, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.142
+AddScanResult, 172.217.7.142, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.142, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.143
+AddScanResult, 172.217.7.143, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.144
+AddScanResult, 172.217.7.144, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.145
+AddScanResult, 172.217.7.145, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.146
+AddScanResult, 172.217.7.146, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.148
+AddScanResult, 172.217.7.148, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.149
+AddScanResult, 172.217.7.149, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.150
+AddScanResult, 172.217.7.150, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.151
+AddScanResult, 172.217.7.151, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.152
+AddScanResult, 172.217.7.152, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.152, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.153
+AddScanResult, 172.217.7.153, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.153, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.154
+AddScanResult, 172.217.7.154, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.154, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.155
+AddScanResult, 172.217.7.155, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.155, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.156
+AddScanResult, 172.217.7.156, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.156, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.157
+AddScanResult, 172.217.7.157, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.157, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.158
+AddScanResult, 172.217.7.158, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.158, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.159
+AddScanResult, 172.217.7.159, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.159, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.160
+AddScanResult, 172.217.7.160, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.161
+AddScanResult, 172.217.7.161, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.162
+AddScanResult, 172.217.7.162, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.163
+AddScanResult, 172.217.7.163, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.164
+AddScanResult, 172.217.7.164, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.165
+AddScanResult, 172.217.7.165, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 172.217.7.165, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 172.217.7.166
+AddScanResult, 172.217.7.166, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.167
+AddScanResult, 172.217.7.167, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.168
+AddScanResult, 172.217.7.168, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.169
+AddScanResult, 172.217.7.169, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.170
+AddScanResult, 172.217.7.170, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.171
+AddScanResult, 172.217.7.171, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.172
+AddScanResult, 172.217.7.172, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.173
+AddScanResult, 172.217.7.173, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.7.174
+AddScanResult, 172.217.7.174, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.9.196
+AddScanResult, 172.217.9.196, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.10.4
+AddScanResult, 172.217.10.4, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.10.36
+AddScanResult, 172.217.10.36, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.10.67
+AddScanResult, 172.217.10.67, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.10.100
+AddScanResult, 172.217.10.100, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.10.132
+AddScanResult, 172.217.10.132, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.10.228
+AddScanResult, 172.217.10.228, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.11.36
+AddScanResult, 172.217.11.36, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 172.217.12.164
+AddScanResult, 172.217.12.164, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 206.205.255.225
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 10193, 80, tcp, "HTTP Proxy Arbitrary Site/Port Relaying", "The remote proxy can be used to connect to arbitrary ports", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 10193, 443, tcp, "HTTP Proxy Arbitrary Site/Port Relaying", "The remote proxy can be used to connect to arbitrary ports", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 10194, 80, tcp, "HTTP Proxy POST Request Relaying", "Interactive sessions can be open through the HTTP proxy.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 10194, 443, tcp, "HTTP Proxy POST Request Relaying", "Interactive sessions can be open through the HTTP proxy.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 10759, 80, tcp, "Web Server HTTP Header Internal IP Disclosure", "This web server leaks a private IP address through its HTTP headers.", "cve_ids: CVE-2000-0649", "bugtraq_ids:"
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 10759, 443, tcp, "Web Server HTTP Header Internal IP Disclosure", "This web server leaks a private IP address through its HTTP headers.", "cve_ids: CVE-2000-0649", "bugtraq_ids:"
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddScanResult, 206.205.255.225, "SecurityCenter 5.x", 105415, 443, tcp, "Return Of Bleichenbacher's Oracle Threat (ROBOT) Information Disclosure", "The server leaks whether or not an RSA-encrypted ciphertext is formatted correctly.", "cve_ids: CVE-2017-6168 CVE-2017-17382 CVE-2017-17427 CVE-2017-17428 CVE-2017-12373 CVE-2017-13098 CVE-2017-1000385 CVE-2017-13099 CVE-2016-6883 CVE-2012-5081", "bugtraq_ids:"
+AddHost, 209.128.74.180
+AddScanResult, 209.128.74.180, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+AddHost, 216.58.217.110
+AddScanResult, 216.58.217.110, "SecurityCenter 5.x", 42873, 443, tcp, "SSL Medium Strength Cipher Suites Supported", "The remote service supports the use of medium strength SSL ciphers.", "cve_ids: ", "bugtraq_ids:"
+ScanFlush

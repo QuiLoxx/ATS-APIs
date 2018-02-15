@@ -1,0 +1,7 @@
+SetSource, SecurityCenter 5.x
+DeleteScanResult, 10.0.0.9, "SecurityCenter 5.x", 70658, 443, tcp
+DeleteScanResult, 13.72.98.3, "SecurityCenter 5.x", 51192, 443, tcp
+DeleteScanResult, 52.25.17.132, "SecurityCenter 5.x", 11213, 443, tcp
+DeleteScanResult, 78.46.45.177, "SecurityCenter 5.x", 70658, 443, tcp
+DeleteScanResult, 78.46.45.177, "SecurityCenter 5.x", 71049, 443, tcp
+ScanFlush
