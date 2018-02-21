@@ -181,12 +181,14 @@ class processThread (threading.Thread):
     def run(self):
         print "Starting Vulnerability Update Thread"
         counter = 0
-        while True:
-            updateVulns(security_center,processing)
-            counter += 1
-            print "Ran update {} times @ {}".format(counter, time.ctime(time.time()))
-            print "sleeping for {} minutes".format(str(float(delay/60)))
-            time.sleep(delay)
-
+        try:
+            while True:
+                updateVulns(security_center,processing)
+                counter += 1
+                print "Ran update {} times @ {}".format(counter, time.ctime(time.time()))
+                print "sleeping for {} minutes".format(str(float(delay/60)))
+                time.sleep(delay)
+        except KeyboardInterrupt:
+            print "Terminating thread."
 thread1 = processThread(1,"update vuln", delay)
 thread1.start()
