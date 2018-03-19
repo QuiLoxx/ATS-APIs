@@ -17,6 +17,8 @@ var = {
     "endpoint": config["endpoint"],
     "group_name": config["group_name"],
     "event_name": config["event_name"],
+    "event_ids" : config["event_ids"],
+    "event_choice" : config["id_or_name"]
     }
 
 if var["debug"]:
@@ -52,30 +54,40 @@ elif not found:
     print "FAIL - group name doesnt exist: {}".format(var["group_name"])
     sys.exit()
 
-found = False
-event_list = amp.get("/v1/event_types")
-for event in event_list["data"]:
-    if event["name"] == var["event_name"]:
-        event_id = event["id"]
-        found = True
 
-if found and var["debug"]:
-    log.write("**debug - event type found with ID {}.... OK!\n".format(event_id))
-elif not found:
-    print "FAIL - event type doesnt exist: {}".format(var["event_name"])
-    sys.exit()
+if var["event_choice"] == "name":
+    found = False
+    event_list = amp.get("/v1/event_types")
+    for event in event_list["data"]:
+        if event["name"] == var["event_name"]:
+            event_id = event["id"]
+            found = True
 
-body = {
-    "name": "lab_event",
-    "event_type": ["{}".format(event_id)],
-    "group_guid": ["{}".format(group_guid)]
-}
+    if found and var["debug"]:
+        log.write("**debug - event type found with ID {}.... OK!\n".format(event_id))
+    elif not found:
+        print "FAIL - event type doesnt exist: {}".format(var["event_name"])
+        sys.exit()
 
+    body = {
+        "name": "lab_event",
+        "event_type": ["{}".format(event_id)],
+        "group_guid": ["{}".format(group_guid)]
+    }
+if var["event_choice"] == "id":
+
+    body = {
+        "name": "lab_event",
+        "event_type": var["event_ids"],
+        "group_guid": ["{}".format(group_guid)]
+    }
+print body
 event_stream = amp.post("/v1/event_streams", body)
 if var["debug"]:
     log.write("**debug - event stream created.... OK!\n")
     log.write("**debug - begining work to start listening for events.... OK!\n")
-
+print event_stream
+print "---------"
 url = "amqps://{}:{}@{}:{}".format(
             event_stream["data"]["amqp_credentials"]["user_name"],
             event_stream["data"]["amqp_credentials"]["password"],

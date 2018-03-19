@@ -1,8 +1,10 @@
 {
 	"debug" : true,
 	"client_id": "",
-	"api_key" : "  ",
+	"api_key" : "",
 	"endpoint" : "api.amp.cisco.com",
 	"group_name" : "Audit",
-	"event_name" : "Threat Detected"
+	"event_name" : "Threat Detected",
+	"event_ids" : [553648130, 554696714, 554696715],
+	"id_or_name" : "id"
 }

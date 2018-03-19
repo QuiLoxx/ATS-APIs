@@ -25,7 +25,9 @@ Enter the api credentials for your amp for endpoints account and the group for w
 	"api_key" : "",
 	"endpoint" : "",
 	"group_name" : "",
-	"event_type" : ""
+	"event_type" : "",
+	"event_ids" : [],
+	"id_or_name" : ""
 }
 
 ```
@@ -37,10 +39,12 @@ An example of the `parameters.json` file is below
 {
 	"debug" : true,
 	"client_id": "2cee1c2632a2e9d63f53",
-	"api_key" : "beff74fff-7b9b-4f4b-887b-1db8af937ceb",
+	"api_key" : "beff74fee-7b9b-4f4b-887b-1db8af937ceb",
 	"endpoint" : "api.amp.cisco.com",
 	"group_name" : "",
-	"event_type" : ""
+	"event_type" : "",
+	"event_ids" : [553648130, 554696714, 554696715],
+	"id_or_name" : "id"
 }
 
 ```
