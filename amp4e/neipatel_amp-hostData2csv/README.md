@@ -24,6 +24,7 @@ Modify all fields in the `parameters.json` file to match the needs
 "api_key" : "<amp4e api key>",
 "endpoint" : "<api endpoints url>",
 "group_name" : "<source group of endpoints>"
+"fmc": "<fmc hostname>"
 
 ```
 
@@ -35,6 +36,7 @@ Example configuration file:
 "api_key" : "2a0d74b2-ba1e-4698-a751-b9ef8807e3df",
 "endpoint" : "api.amp.cisco.com",
 "group_name" : "Protect"
+"fmc": "test-fmc.local"
 ```
 
 To execute the script from the OS shell run either:
