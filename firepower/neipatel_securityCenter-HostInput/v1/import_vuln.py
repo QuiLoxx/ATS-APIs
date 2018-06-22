@@ -50,7 +50,7 @@ query = {
                 "operator":"=",
                 "type": "vuln",
                 "isPredefined": True,
-                "value": ip_range
+                "value": ip_range.replace("\\n", "\n")
                 }
             ]
         }
