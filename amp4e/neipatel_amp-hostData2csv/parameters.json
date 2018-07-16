@@ -1,8 +1,0 @@
-{
-	"debug" : true,
-	"client_id": "a5909190b7e41a031fd3",
-	"api_key" : "b222c984-313c-4b4c-a88b-bad7dc8d3c30",
-	"endpoint" : "api.amp.cisco.com",
-	"group_name" : "Audit",
-	"fmc": "test-fmc"
-}
